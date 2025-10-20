@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Pokémon</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .form-control.shadow-none:focus,
+      .form-select.shadow-none:focus {
+        border-color: #ced4da;
+        box-shadow: none;
+      }
+      body {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-body p-4 p-md-5">
+              <div class="text-center mb-4">
+                <h1 class="h3 fw-bold mb-2">Formulário de Treinador</h1>
+                <p class="text-muted">
+                  Registre suas informações de jornada Pokémon!
+                </p>
+              </div>
+
+              <form action="/src/pages/logout.html">
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-semibold"
+                    >Seu Nome de Treinador</label
+                  >
+                  <input
+                    type="text"
+                    id="nome"
+                    class="form-control shadow-none"
+                    placeholder="Ex: Ash Ketchum"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="inicial" class="form-label fw-semibold"
+                    >Qual foi seu Pokémon inicial?</label
+                  >
+                  <select id="inicial" class="form-select shadow-none" required>
+                    <option value="" disabled selected>Escolha um...</option>
+                    <option value="bulbasaur">Bulbasaur</option>
+                    <option value="charmander">Charmander</option>
+                    <option value="squirtle">Squirtle</option>
+                    <option value="pikachu">Pikachu (Especial)</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="insignias" class="form-label fw-semibold"
+                    >Quantas insígnias você possui?</label
+                  >
+                  <input
+                    type="number"
+                    id="insignias"
+                    class="form-control shadow-none"
+                    placeholder="0"
+                    min="0"
+                    max="8"
+                    required
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-semibold d-block"
+                    >Qual sua região favorita?</label
+                  >
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="regiao"
+                      id="kanto"
+                    />
+                    <label class="form-check-label" for="kanto">Kanto</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="regiao"
+                      id="johto"
+                    />
+                    <label class="form-check-label" for="johto">Johto</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="regiao"
+                      id="hoenn"
+                    />
+                    <label class="form-check-label" for="hoenn">Hoenn</label>
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button
+                    type="submit"
+                    class="btn btn-danger btn-lg fw-bold rounded-3"
+                  >
+                    Registrar Jornada
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
