@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE_edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Story+Script&display=swap");
+
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: "AlfaSlabOne", sans-serif;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      header,
+      footer {
+        background-color: rgba(47, 0, 255, 0.664);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+        padding: 20px;
+      }
+
+      main {
+        padding: 50px;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      button {
+        font-family: "AlfaSlabOne", sans-serif;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: rgb(47, 0, 255, 0.664);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: backgrond-color 0.3s;
+      }
+
+      button:hover {
+        background-color: rgb(250, 123, 4);
+      }
+    </style>
+
+    <title>Exercicio de JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <h1>Aplicando JS - Ação In Button</h1>
+    </header>
+
+    <main>
+      <h2 id="mensagem-principal">Clique e execute a ação do JS 👇</h2>
+      <button id="botao-magico">Clique aqui!</button>
+    </main>
+
+    <footer>
+      <p>© 2025 - FTP - Informática - Senac Nações Unidas</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
