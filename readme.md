@@ -1,7 +1,7 @@
-## Links dos sites dos projetos
+# Links dos sites dos projetos
 
-# Portfolio
+## Portfolio
 web-development-senac.vercel.app
 
-# Curriculo Web
+## Curriculo Web
 curriculo-web-puce.vercel.app
